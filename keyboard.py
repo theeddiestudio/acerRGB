@@ -20,7 +20,7 @@ def setup():
 
 def prep():
     global mode_choice, zone_list, speed_choice, bright_choice, direction_choice, color_choice, final_command
-    command = "./facer_rgb.py "
+    command = "/opt/turbo-fan/facer_rgb.py -save current "
     if mode_choice:
         command += f"-m {mode_choice[0]} "
     if speed_choice:
